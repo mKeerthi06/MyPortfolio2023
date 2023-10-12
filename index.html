@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthi - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(86, 86, 201);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+           
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+
+        }
+        nav ul li a:hover{
+           color: darkblue;
+           font-size: 1.16rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .firstSection  > div{
+            width: 30%;
+            
+        }
+        .leftSection{
+            
+            font-size: 1.5rem;
+            color: black;
+            margin: 150px 0px;
+        }
+        .rightSection img{
+           width: 100%;
+           margin: 70px 0;
+        }
+        .purple{
+            color: rgb(94, 94, 204);
+        }
+        #element{
+            color:rgb(94, 94, 204) ;
+        }
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Keerthi's portfolio</div>
+            <div class="right">
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Keerthi_Marishetter_070.pdf">Resume</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Keerthi Marishetter</span>
+                     </div>
+                <div>I am a passionate Software developer i.e.,</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="images.png",alt="">
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Java devloper', '&amp; Web developer.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
